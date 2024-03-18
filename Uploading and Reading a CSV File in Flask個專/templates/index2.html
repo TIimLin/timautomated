@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Uploading & Reading CSV file</title>
+    <!-- Add Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="text-center my-4">Uploading & Reading CSV file</h1>
+        <p class="text-success"> File uploaded successfully!! </p>
+        <form action="/show_data" target="_blank" class="mb-3">
+            <button type="submit" class="btn btn-primary">Show 答案</button>
+        </form>
+        <button onclick="window.location.href='/download'" class="btn btn-secondary mb-3">Download CSV</button>
+        <div>
+            <label for="prediction">Predict Medical Cost:</label>
+            <textarea id="prediction" name="prediction" style="width: 100%; height: 200px;" readonly>{{prediction}}</textarea>
+        </div>
+    </div>
+    <!-- Add Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+
+</html>
